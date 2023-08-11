@@ -1,0 +1,28 @@
+// place your custom styles here
+.vp-navbar-end {
+    flex: 0.1;
+}
+
+.full-container {
+    overflow: hidden;
+    .vp-page-title,
+    .vp-breadcrumb,
+    .page-meta {
+        display: none;
+    }
+    .vp-page {
+        padding-top: var(--navbar-height);
+        padding-bottom: 0;
+        padding-inline-end: 0 !important;
+    }
+    .theme-hope-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    iframe {
+        width: 100%;
+        height: calc(100vh - var(--navbar-height));
+        border: none;
+    }
+}
