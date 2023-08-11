@@ -2,7 +2,7 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 
 export default defineUserConfig({
-  base: "/portal/",
+  base: "/EPSGIS-DEV-PORTAL/",
 
   lang: "zh-CN",
   title: "EPSGIS DEV for Cesium",
