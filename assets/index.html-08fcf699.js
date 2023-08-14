@@ -1,1 +1,0 @@
-import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o as t,c as r,e as c,a as o}from"./app-7fe33c13.js";const a={},n=o("iframe",{src:"http://120.48.115.17:8082"},null,-1);function s(_,m){return t(),r("div",null,[c(' <iframe src="http://127.0.0.1:8081"></iframe> '),n])}const l=e(a,[["render",s],["__file","index.html.vue"]]);export{l as default};

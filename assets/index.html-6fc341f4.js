@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o as t,c as o,e as r,a}from"./app-411e90ce.js";const c={},n=a("iframe",{src:"https://gaopengbin.github.io/EPSGIS-DEV-EXAMPLE"},null,-1);function s(i,_){return t(),o("div",null,[r(' <iframe src="http://127.0.0.1:8081"></iframe> '),n])}const l=e(c,[["render",s],["__file","index.html.vue"]]);export{l as default};
