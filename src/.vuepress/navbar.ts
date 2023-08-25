@@ -5,7 +5,7 @@ export default navbar([
   // "/demo/",
   {
     text: "产品",
-    prefix: "/guide/",
+    prefix: "/product/",
     children: [
       {
         text: "产品介绍",
@@ -37,11 +37,11 @@ export default navbar([
     children: [
       {
         text: 'Web端',
-        link: ''
+        link: 'web'
       },
       {
         text: '移动端',
-        link: ''
+        link: 'mobile'
       }
     ]
   },
@@ -51,27 +51,22 @@ export default navbar([
     children: [
       {
         text: "web端",
-        link: ''
+        link: 'web'
       },
       {
         text: "移动端",
-        link: ''
+        link: 'mobile'
       },
-      // {
-      //   text: "Server",
-      //   prefix: "foo/",
-      //   children: ["ray", { text: "...", link: "" }],
-      // },
     ],
   },
   {
     text: "API",
     icon: "book",
-    link: "http://39.152.31.83:11280/apps/epsplanet_docs/dist/api/",
+    link: "/api/",
   },
   {
     text: "组件库",
     icon: "book",
-    link: "http://39.152.31.83:11280/apps/epsplanet_docs/dist/components/",
+    link: "/lib",
   }
 ]);
