@@ -1,7 +1,7 @@
 ---
 # title: "点"
-containerClass: full-container
-sidebar: false
+containerClass: api-container
+# sidebar: true
 # breadcrumb: false
 pageInfo: false
 contributors: false
@@ -21,3 +21,5 @@ comment: false
     import test from "@test"
     console.log(window.location.href)
 </script>
+
+<!-- <iframe src='/apidoc/Analyzation.Measurement.html'/> -->

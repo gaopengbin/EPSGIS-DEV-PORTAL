@@ -15,15 +15,15 @@ title: "web"
 
 将下载好的 sdk 包解压到项目的 public 目录下
 
-![](../assets/sdk.png)
+<!-- ![](../assets/sdk.png) -->
 
 然后在 public/index.html 中引入
 
-![](../assets/sdk2.png)
+<!-- ![](../assets/sdk2.png) -->
 
 main.ts 修改
 
-![](../assets/sdk3.png)
+<!-- ![](../assets/sdk3.png) -->
 
 ## 3.引入 EPSPlanet_bwl
 
@@ -46,6 +46,6 @@ app.use(EPSPlanetBWL);
 
 将下载的资源包解压到项目的 public 目录下
 
-![](../assets/assets.png)
+<!-- ![](../assets/assets.png) -->
 
 至此，我们的项目环境配置完毕

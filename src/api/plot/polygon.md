@@ -1,7 +1,7 @@
 ---
 # title: "点"
-containerClass: full-container
-sidebar: false
+containerClass: api-container
+# sidebar: true
 # breadcrumb: false
 pageInfo: false
 contributors: false
@@ -15,9 +15,4 @@ comment: false
 # backtotop: false
 ---
 
-<test/>
-
-<script setup lang='ts'>
-    import test from "@test"
-    console.log(window.location.href)
-</script>
+<iframe src='http://localhost/apidoc/Obj.Polygon.html'/>
