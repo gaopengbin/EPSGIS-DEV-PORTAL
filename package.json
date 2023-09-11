@@ -17,6 +17,8 @@
     "vuepress-theme-hope": "2.0.0-beta.234"
   },
   "dependencies": {
-    "element-plus": "^2.3.12"
+    "axios": "^1.5.0",
+    "element-plus": "^2.3.12",
+    "epsplanet": "file:../epsplanet-2.0.0.tgz"
   }
 }

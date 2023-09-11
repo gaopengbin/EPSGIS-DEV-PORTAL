@@ -37,7 +37,7 @@ export default navbar([
     children: [
       {
         text: 'Web端',
-        link: 'web'
+        link: 'web/intro'
       },
       {
         text: '移动端',
@@ -67,6 +67,6 @@ export default navbar([
   {
     text: "组件库",
     icon: "book",
-    link: "/lib",
+    link: "/lib/",
   }
 ]);

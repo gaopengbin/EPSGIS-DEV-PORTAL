@@ -1,5 +1,6 @@
 import { sidebar } from "vuepress-theme-hope";
-
+import { createComponentNav } from './createNav'
+console.log(createComponentNav())
 export default sidebar({
   "/": [
     "",
@@ -19,13 +20,27 @@ export default sidebar({
     "slides",
   ],
   "/guide/": [
-    "",
+    // "",
     {
       text: "介绍",
       icon: "laptop-code",
-      prefix: "demo/",
+      prefix: "web/intro/",
       link: "web/intro/",
-      children: "structure",
+      children: [
+        {
+          text: "Cesium",
+          link: "#cesium",
+
+        },
+        {
+          text: "EpsplanetSDK",
+          link: "#epsplanetsdk",
+        },
+        {
+          text: "EpsplanetBWL",
+          link: "#epsplanetbwl",
+        },
+      ],
     },
     {
       text: "快速开始",
@@ -35,4 +50,5 @@ export default sidebar({
       children: "structure",
     },
   ],
+  "/lib/": createComponentNav(),
 });
