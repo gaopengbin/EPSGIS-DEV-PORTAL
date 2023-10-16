@@ -1,5 +1,65 @@
 #  雪
 
+<div data-sunwayTheme='light'>
+  <EpsplanetEarth :showDefaultBasemap="true" >
+    <EpsplanetButton container="#earthContainer" icon="icon-tool_swtx_xue" type="panel" :position="position" :panel="panel" title='雪'>
+      <EpsplanetSnow/>
+    </EpsplanetButton>
+  </EpsplanetEarth>
+</div>
+
+<script setup lang='ts'>
+import {ref} from 'vue';
+const position = ref({
+  left: 10,
+  top: 10
+});
+const panel = ref({
+  size: {
+    width: '300px',
+    height: '300px'
+  },
+  position: {
+    left: 10,
+    top: 10
+  }
+});
+</script>
+
+:::: details 代码
+
+```vue
+<template>
+  <div data-sunwayTheme="light">
+    <EpsplanetEarth :showDefaultBasemap="true">
+      <EpsplanetButton icon="icon-tool_swtx_xue" type="panel" :position="position" :panel="panel" title="雪">
+        <EpsplanetSnow />
+      </EpsplanetButton>
+    </EpsplanetEarth>
+  </div>
+</template>
+
+<script setup lang="ts">
+import { ref } from "vue";
+const position = ref({
+  left: 10,
+  top: 10,
+});
+const panel = ref({
+  size: {
+    width: "300px",
+    height: "300px",
+  },
+  position: {
+    left: 10,
+    top: 10,
+  },
+});
+</script>
+```
+
+::::
+
 ## 标签
 
 ```

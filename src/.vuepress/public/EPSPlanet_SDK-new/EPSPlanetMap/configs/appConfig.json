@@ -1,0 +1,219 @@
+{
+    "url1": "http://localhost:6080/arcgis/rest/services/SampleWorldCities/MapServer",
+    "url": "https://server.arcgisonline.com/arcgis/rest/services/World_Topo_Map/MapServer",
+    "map": {
+        "layers": [
+            {
+                "title": "Esri",
+                "type": "tile",
+                "source": {
+                    "type": "xyz-source",
+                    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}"
+                }
+            },
+            {
+                "title": "矢量",
+                "type": "vector",
+                "source": {
+                    "type": "vector-source",
+                    "url": "https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json",
+                    "format": {
+                        "type": "geojson"
+                    }
+                },
+                "style": {
+                    "stroke": {
+                        "color": "#008eff",
+                        "width": 3
+                    }
+                }
+            },
+            {
+                "title": "省边界",
+                "type": "VectorTile",
+                "minZoom": 0,
+                "maxZoom": 8,
+                "source": {
+                    "type": "vectortile-source",
+                    "url": "http://jojo1986.cn:8188/geoserver/gwc/service/tms/1.0.0/SY:ln_province_l@EPSG:3857@pbf/{z}/{x}/{-y}.pbf",
+                    "format": {
+                        "type": "mvt"
+                    }
+                },
+                "style": {
+                    "stroke": {
+                        "color": "#cc0033",
+                        "width": 5
+                    }
+                }
+            },
+            {
+                "title": "村界",
+                "type": "VectorTile",
+                "minZoom": 9,
+                "maxZoom": 18,
+                "source": {
+                    "type": "vectortile-source",
+                    "url": "http://jojo1986.cn:8188/geoserver/gwc/service/tms/1.0.0/SY:ln_village_l@EPSG:3857@pbf/{z}/{x}/{-y}.pbf",
+                    "format": {
+                        "type": "mvt"
+                    }
+                },
+                "style": {
+                    "stroke": {
+                        "color": "#6600cc",
+                        "width": 2
+                    }
+                }
+            },
+            {
+                "title": "村点",
+                "type": "VectorTile",
+                "minZoom": 12,
+                "maxZoom": 18,
+                "source": {
+                    "type": "vectortile-source",
+                    "url": "http://jojo1986.cn:8188/geoserver/gwc/service/tms/1.0.0/SY:ln_village_p@EPSG:3857@pbf/{z}/{x}/{-y}.pbf",
+                    "format": {
+                        "type": "mvt"
+                    }
+                },
+                "style": {
+                    "type": "style-fn",
+                    "image": {
+                        "type": "Icon",
+                        "imgSize": [
+                            350,
+                            360
+                        ],
+                        "scale": 0.1,
+                        "src": "styles/a.jpg"
+                    },
+                    "text": {
+                        "type": "Text-fn",
+                        "font": "12px Calibri,sans-serif",
+                        "fill": {
+                            "type": "Fill",
+                            "color": "#000"
+                        },
+                        "stroke": {
+                            "type": "Stroke",
+                            "color": "#fff",
+                            "width": 1
+                        },
+                        "text1": "{province_name}{city_name}{county_name}{name}",
+                        "text": [
+                            "{province_name}",
+                            "bold 16px Calibri,sans-serif",
+                            "\n",
+                            "",
+                            "{city_name}",
+                            "bold 15px Calibri,sans-serif",
+                            "\n",
+                            "",
+                            "{county_name}",
+                            "bold 14px Calibri,sans-serif",
+                            "\n",
+                            "",
+                            "{name}",
+                            "bold 13px Calibri,sans-serif"
+                        ],
+                        "textAlign": "center",
+                        "textBaseline": "middle",
+                        "offsetY": 50
+                    }
+                },
+                "style1": {
+                    "type": "style",
+                    "image": {
+                        "type": "Icon",
+                        "imgSize": [
+                            350,
+                            360
+                        ],
+                        "scale": 0.1,
+                        "src": "styles/a.jpg"
+                    },
+                    "text": {
+                        "type": "Text",
+                        "font": "12px Calibri,sans-serif",
+                        "fill": {
+                            "type": "Fill",
+                            "color": "#000"
+                        },
+                        "stroke": {
+                            "type": "Stroke",
+                            "color": "#fff",
+                            "width": 1
+                        },
+                        "text": "eval(feature.get('name'))",
+                        "textAlign": "center",
+                        "textBaseline": "middle",
+                        "offsetY": 24
+                    }
+                }
+            }
+        ],
+        "view": {
+            "zoom": 7,
+            "center": [
+                13557309.863096809,
+                5104876.98494831
+            ]
+        },
+        "controls": {
+            "type": "defaults",
+            "zoom": true,
+            "rotate": true
+        }
+    },
+    "widgets": [],
+    "widgets1": [
+        {
+            "label": "测试图标",
+            "uri": "widgets/layerList",
+            "position": {
+                "left": 160,
+                "right": 0,
+                "bottom": 30
+            },
+            "inPanel": true
+        },
+        {
+            "label": "icon",
+            "tagName": "webgis-layer-list",
+            "showLabel": true,
+            "position": {
+                "left": 60,
+                "top": 160
+            },
+            "inPanel": true
+        },
+        {
+            "label": "测试",
+            "tagName": "webgis-layer-list",
+            "position": {
+                "right": 60,
+                "top": 160,
+                "width": 100
+            },
+            "inPanel": true
+        },
+        {
+            "label": "hello-world",
+            "tagName": "webgis-hello-world",
+            "position": {
+                "left": 60,
+                "top": 60
+            }
+        },
+        {
+            "label": "hello-world",
+            "tagName": "webgis-hello-world",
+            "position": {
+                "right": 60,
+                "top": 60
+            }
+        }
+    ]
+}

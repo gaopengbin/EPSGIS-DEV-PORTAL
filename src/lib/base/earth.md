@@ -1,16 +1,16 @@
 # 地球
-
-
-  <EpsplanetEarth :showDefaultBasemap="true" />
+<div style="height:40vh">
+<EpsplanetEarth :showDefaultBasemap="true" />
+</div>
 
 
 <script setup lang='ts'>
-    import {Earth} from "epsplanet"
-    import {onMounted} from "vue"
-    onMounted(async()=>{
-       await XE.ready()
-    //    debugger
-    })
+    // import {Earth} from "epsplanet"
+    // import {onMounted} from "vue"
+    // onMounted(async()=>{
+    //   //  await XE.ready()
+    // //    debugger
+    // })
 </script>
 
 :::: details 代码
@@ -46,7 +46,7 @@
 | ------- | ------------ | ----------------- |
 | onReady | 地球创建完成 | earth(earth 对象) |
 
-## epsplanet-earth 方法
+<!-- ## epsplanet-earth 方法
 
 | 方法名 | 说明 | 参数 |
-| ------ | ---- | ---- |
+| ------ | ---- | ---- | -->

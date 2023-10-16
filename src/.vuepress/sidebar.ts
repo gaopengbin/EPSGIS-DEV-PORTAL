@@ -23,7 +23,7 @@ export default sidebar({
     // "",
     {
       text: "介绍",
-      icon: "laptop-code",
+      icon: "book",
       prefix: "web/intro/",
       link: "web/intro/",
       children: [
@@ -44,11 +44,40 @@ export default sidebar({
     },
     {
       text: "快速开始",
-      icon: "book",
-      prefix: "quick/",
-      link: "web/quick/",
-      children: "structure",
+      icon: "rocket",
+      prefix: "web/quick",
+      link: "web/quick",
+      children: [
+        {
+          text: "SDK下载",
+          link: "#下载-epsplanetsdk",
+        },
+        {
+          text: "SDK引入",
+          link: "#引入-epsplanetsdk",
+        },
+        {
+          text: "组件库安装",
+          link: "#组件库安装",
+        },
+        {
+          text: "组件库使用",
+          link: "#组件库用法",
+        },
+      ]
     },
+    {
+      text: "开发",
+      icon: "laptop-code",
+      prefix: "dev/",
+      // link: "dev/",
+      children:[
+        {
+          text:"常见问题",
+          link:"question",
+        }
+      ]
+    }
   ],
   "/lib/": createComponentNav(),
 });

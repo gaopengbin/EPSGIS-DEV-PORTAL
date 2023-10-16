@@ -4,24 +4,25 @@ import ElementPlus from 'element-plus'
 import 'element-plus/theme-chalk/index.css'
 // import Epsplanet from 'epsplanet'
 import 'epsplanet/es/style.css'
+import './styles/font/iconfont.css'
 
 
 
 export default defineClientConfig({
     enhance({ app }) {
-        let script = document.createElement('script')
-        script.src = 'http://localhost:5173/EPSPlanet_SDK/XbsjEarth/XbsjEarth.js'
-        document.body.appendChild(script)
-        script.onload = () => {
-            XE.ready().then(() => {
-                import('epsplanet').then(Epsplanet => {
-                    console.log(Epsplanet)
-                    app.use(Epsplanet.default)
-                })
+        // debugger
+        let interval = setInterval(() => {
+            if (app._container) {
+                // XE.ready().then(() => {
+                    import('epsplanet').then(Epsplanet => {
+                        console.log(Epsplanet)
+                        app.use(Epsplanet.default)
+                    })
+                // })
+                clearInterval(interval)
+            }
+        }, 1000)
 
-            })
-            // app.use(Epsplanet)
-        }
         app.use(ElementPlus)
         for (const icon in Icons) {
             // eslint-disable-next-line import/namespace
@@ -31,6 +32,5 @@ export default defineClientConfig({
         // if(typeof window !== 'undefined') {
         //     (window as any).apidoc = 'http://localhost/apidoc'
         // }
-
     }
 })

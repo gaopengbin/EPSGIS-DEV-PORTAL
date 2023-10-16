@@ -1,0 +1,30 @@
+{
+    "baseUrl": "http://39.152.31.83:11290",
+    "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCxk4BBkDqEi9lV+G7LKM/WtI0M9+nSkIAXrcIX1tpN2ZTimVOA2GhPmydeaJ2L+IUfJ9gBLobsEGezyi8LprlQ3GifJ9WxCU7ooEXrYIFLUOJfkvA+E6vlGJKwrtVzYXewRu2ZtqTt+QTOwD0zm+fiK8d1K0kl8reaL2VW77X30QIDAQAB",
+    "xApp": "eWNzd2d4OjUzNTBkODdiYTMxZTQ2OWU4NDkyOTc0OGFiYTIyODIy",
+    "access": "iHkXaixQg4PjTXKLnRu3sHDWPmlLAz8d",
+    "sceneManager": {
+        "getSceneList": "/epsplanet/manager/scene/",
+        "getScene": "/epsplanet/manager/scene/resource/",
+        "addScene": "/epsplanet/manager/scene/",
+        "updateScene": "/epsplanet/manager/scene/",
+        "deleteScene": "/epsplanet/manager/scene/resource/"
+    },
+    "shp2Geojson": {
+        "baseUrl": "http://192.168.31.128:11290",
+        "api_upload": "/epsplanet/manager/geojson/",
+        "api_download": "/epsplanet/manager/filesource/download/",
+        "access": "iHkXaixQg4PjTXKLnRu3sHDWPmlLAz8d",
+        "rid": "18ecce94b9094c559f32435fb9689d97"
+    },
+    "cameraViewManager": {
+        "baseApi": "/sunwayyc/view"
+    },
+    "pick":{
+        "getSubLayers":"/epsplanet/manager/release/shp/detail/",
+        "vectorServers":[
+            "http://120.48.115.17:6080/arcgis/rest/services/ycgx1/MapServer",
+            "http://120.48.115.17:6080/arcgis/rest/services/ycgx/MapServer"
+        ]
+    }
+}

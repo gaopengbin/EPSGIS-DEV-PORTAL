@@ -1,0 +1,9 @@
+{
+    "shp2Geojson": {
+        "baseUrl":"http://192.168.31.128:11290",
+        "api_upload": "/epsplanet/manager/geojson/",
+        "api_download": "/epsplanet/manager/filesource/download/",
+        "access": "iHkXaixQg4PjTXKLnRu3sHDWPmlLAz8d",
+        "rid": "18ecce94b9094c559f32435fb9689d97"
+    }
+}

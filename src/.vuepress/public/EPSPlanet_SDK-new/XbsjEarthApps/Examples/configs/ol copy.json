@@ -1,0 +1,273 @@
+{
+    "map": {
+        "layers": [
+            {
+                "title": "Esri",
+                "type": "tile",
+                "isBasemap": true,
+                "listMode": "hide",
+                "thumbnail": "images/esri.png",
+                "source": {
+                    "type": "xyz-source",
+                    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}"
+                }
+            },
+            {
+                "title": "矢量",
+                "type": "vector",
+                "isBasemap": true,
+                "listMode": "hide",
+                "thumbnail": "images/vector.png",
+                "source": {
+                    "type": "vector-source",
+                    "url": "https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json",
+                    "format": {
+                        "type": "geojson"
+                    }
+                },
+                "noSwitcherDelete": false,
+                "style": {
+                    "stroke": {
+                        "color": "#008eff",
+                        "width": 3
+                    }
+                }
+            },
+            {
+                "title": "图层组",
+                "type": "group",
+                "visible": false,
+                "layers": [
+                    {
+                        "title": "Esri",
+                        "type": "tile",
+                        "source": {
+                            "type": "xyz-source",
+                            "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}"
+                        }
+                    },
+                    {
+                        "title": "矢量",
+                        "type": "vector",
+                        "thumbnail": "images/1.png",
+                        "source": {
+                            "type": "vector-source",
+                            "url": "https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json",
+                            "format": {
+                                "type": "geojson"
+                            }
+                        },
+                        "extent": [
+                            6967036.2497079475,
+                            204097.9083195664,
+                            15997906.648179287,
+                            7113389.281689078
+                        ],
+                        "noSwitcherDelete": true,
+                        "style": {
+                            "stroke": {
+                                "color": "#008eff",
+                                "width": 3
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "省边界",
+                "type": "VectorTile",
+                "minZoom": 0,
+                "maxZoom": 8,
+                "source": {
+                    "type": "vectortile-source",
+                    "url": "http://jojo1986.cn:8188/geoserver/gwc/service/tms/1.0.0/SY:ln_province_l@EPSG:3857@pbf/{z}/{x}/{-y}.pbf",
+                    "format": {
+                        "type": "mvt"
+                    }
+                },
+                "style": {
+                    "stroke": {
+                        "color": "#cc0033",
+                        "width": 5
+                    }
+                }
+            },
+            {
+                "title": "村界",
+                "type": "VectorTile",
+                "minZoom": 9,
+                "maxZoom": 18,
+                "source": {
+                    "type": "vectortile-source",
+                    "url": "http://jojo1986.cn:8188/geoserver/gwc/service/tms/1.0.0/SY:ln_village_l@EPSG:3857@pbf/{z}/{x}/{-y}.pbf",
+                    "format": {
+                        "type": "mvt"
+                    }
+                },
+                "style": {
+                    "stroke": {
+                        "color": "#6600cc",
+                        "width": 2
+                    }
+                }
+            },
+            {
+                "title": "村点",
+                "type": "VectorTile",
+                "minZoom": 12,
+                "maxZoom": 18,
+                "source": {
+                    "type": "vectortile-source",
+                    "url": "http://jojo1986.cn:8188/geoserver/gwc/service/tms/1.0.0/SY:ln_village_p@EPSG:3857@pbf/{z}/{x}/{-y}.pbf",
+                    "format": {
+                        "type": "mvt"
+                    }
+                },
+                "style": {
+                    "type": "style-fn",
+                    "image": {
+                        "type": "Icon",
+                        "imgSize": [
+                            350,
+                            360
+                        ],
+                        "scale": 0.1,
+                        "src": "styles/a.png"
+                    },
+                    "text": {
+                        "type": "Text-fn",
+                        "font": "12px Calibri,sans-serif",
+                        "fill": {
+                            "type": "Fill",
+                            "color": "#000"
+                        },
+                        "stroke": {
+                            "type": "Stroke",
+                            "color": "#fff",
+                            "width": 1
+                        },
+                        "text1": "{province_name}{city_name}{county_name}{name}",
+                        "text": [
+                            "{province_name}",
+                            "bold 16px Calibri,sans-serif",
+                            "\n",
+                            "",
+                            "{city_name}",
+                            "bold 15px Calibri,sans-serif",
+                            "\n",
+                            "",
+                            "{county_name}",
+                            "bold 14px Calibri,sans-serif",
+                            "\n",
+                            "",
+                            "{name}",
+                            "bold 13px Calibri,sans-serif"
+                        ],
+                        "textAlign": "center",
+                        "textBaseline": "middle",
+                        "offsetY": 50
+                    }
+                },
+                "style1": {
+                    "type": "style",
+                    "image": {
+                        "type": "Icon",
+                        "imgSize": [
+                            350,
+                            360
+                        ],
+                        "scale": 0.1,
+                        "src": "styles/a.jpg"
+                    },
+                    "text": {
+                        "type": "Text",
+                        "font": "12px Calibri,sans-serif",
+                        "fill": {
+                            "type": "Fill",
+                            "color": "#000"
+                        },
+                        "stroke": {
+                            "type": "Stroke",
+                            "color": "#fff",
+                            "width": 1
+                        },
+                        "text": "eval(feature.get('name'))",
+                        "textAlign": "center",
+                        "textBaseline": "middle",
+                        "offsetY": 24
+                    }
+                }
+            }
+        ],
+        "view": {
+            "zoom": 7,
+            "center": [
+                13557309.863096809,
+                5104876.98494831
+            ]
+        },
+        "controls": {
+            "type": "defaults",
+            "zoom": false,
+            "rotate": true
+        }
+    },
+    "widgets": [
+        {
+            "label": "缩放",
+            "tagName": "ol-zoom-widget",
+            "position": {
+                "left": 20,
+                "top": 20
+            }
+        },
+        {
+            "label": "坐标",
+            "tagName": "ol-coordinate",
+            "position": {
+                "left": 0,
+                "bottom": 0
+            }
+        },
+        {
+            "label": "图层管理",
+            "tagName": "ol-layer-list",
+            "position": {
+                "left": 20,
+                "top": 100,
+                "width": 300,
+                "height": 350
+            },
+            "inPanel": true,
+            "panel": {
+                "type": "default"
+            },
+            "config": {
+                "hello": 1
+            }
+        },
+        {
+            "label": "底图管理",
+            "tagName": "ol-basemap-list",
+            "icon": "icons/basemap.png",
+            "position": {
+                "left": 20,
+                "top": 150,
+                "width": 160,
+                "height": 120
+            },
+            "inPanel": true
+        },
+        {
+            "label": "底图管理",
+            "tagName": "ol-basemap-list",
+            "position": {
+                "right": 20,
+                "bottom": 10,
+                "width": 160,
+                "height": 80,
+                "background": "transparent"
+            }
+        }
+    ]
+}

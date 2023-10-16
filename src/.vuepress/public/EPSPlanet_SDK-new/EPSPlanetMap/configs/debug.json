@@ -1,0 +1,63 @@
+{
+    "licenses": "d9a5da17af8c3706abd6bac55e1fc16867ba1fd48df102878cfbcbf23c069332867f19f92c2450f5423addb3e17c324b8a35242079c1384bf02e042d0d0f",
+    "include": [
+        "ol",
+        "arcgis"
+    ],
+    "include1": [
+        "cesium",
+        "ol",
+        "arcgis",
+        "sync"
+    ],
+    "modules": {
+        "cesium": [
+            {
+                "type": "css",
+                "url": "./node_modules/cesium/Build/Cesium/Widgets/widgets.css"
+            },
+            {
+                "type": "module",
+                "url": "./src/cesium/main.ts"
+            }
+        ],
+        "ol": [
+            {
+                "type": "css",
+                "url": "./node_modules/ol-ext/dist/ol-ext.min.css"
+            },
+            {
+                "type": "css",
+                "url": "./node_modules/ol/ol.css"
+            },
+            {
+                "type": "module",
+                "url": "./src/ol/main.ts"
+            },
+            {
+                "type": "js",
+                "url": "third_party/shpjs/shp.js"
+            }
+        ],
+        "arcgis": [
+            {
+                "type": "css",
+                "url": "https://js.arcgis.com/4.26/@arcgis/core/assets/esri/themes/light/main.css"
+            },
+            {
+                "type": "js",
+                "url": "https://js.arcgis.com/4.26"
+            },
+            {
+                "type": "module",
+                "url": "./src/arcgis/main.ts"
+            }
+        ],
+        "sync": [
+            {
+                "type": "module",
+                "url": "./src/sync/main.ts"
+            }
+        ]
+    }
+}

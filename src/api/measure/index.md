@@ -19,7 +19,7 @@ comment: false
 
 <script setup lang='ts'>
     import test from "@test"
-    console.log(window.location.href)
+    // console.log(window.location.href)
 </script>
 
 <!-- <iframe src='/apidoc/Analyzation.Measurement.html'/> -->

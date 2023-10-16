@@ -1,4 +1,20 @@
-资源下载
+---
+title: 资源下载
+sidebar: false
+breadcrumb: false
+pageInfo: false
+contributors: false
+editLink: false
+lastUpdated: false
+prev: false
+next: false
+comment: false
+footer: false
+
+backtotop: false
+---
+
+
 
 ### [点击下载样例开发包](http://39.152.31.83:11280/apps/epsplanet_docs/resource/demo.zip)
 

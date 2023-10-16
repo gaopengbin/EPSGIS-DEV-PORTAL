@@ -1,0 +1,33 @@
+{
+    "map": {
+        "layers": [
+            {
+                "title": "Esri",
+                "type": "tile",
+                "isBasemap": true,
+                "source": {
+                    "type": "xyz-source",
+                    "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}"
+                },
+                "thumbnail": "EPSPlanet_SDK/EPSPlanetMap/images/esri.png",
+                "props": {
+                    "thumb": "/EPSPlanet_SDK/EPSPlanetMap/images/esri.png"
+                }
+            }
+        ],
+        "view": {
+            "projection": "EPSG:4326",
+            "zoom": 5,
+            "center": [
+                122,
+                37
+            ]
+        },
+        "controls": {
+            "type": "defaults",
+            "zoom": false,
+            "rotate": true
+        }
+    },
+    "widgets": []
+}

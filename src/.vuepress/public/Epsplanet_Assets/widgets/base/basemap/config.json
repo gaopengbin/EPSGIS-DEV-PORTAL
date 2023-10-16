@@ -1,0 +1,55 @@
+{
+    "basemapList": [
+        {
+            "show": false,
+            "name": "天地图影像",
+            "imgUrl": "Epsplanet_Assets/assets/basemap/tianditu_image.png",
+            "xbsjGuid": "ad360d1e-e817-4c28-bc58-9e2fbe70ca7f",
+            "xbsjType": "Imagery",
+            "xbsjZIndex": -1,
+            "xbsjImageryProvider": {
+                "XbsjImageryProvider": {
+                    "url": "http://t6.tianditu.com/DataServer?T=img_w&x={x}&y={y}&l={z}&tk=cf7c0b94d43b4d5e1f27a5712b147c70",
+                    "srcCoordType": "WGS84",
+                    "dstCoordType": "WGS84"
+                }
+            },
+            "UrlTemplateImageryProvider": {},
+            "WebMapServiceImageryProvider": {},
+            "WebMapTileServiceImageryProvider": {},
+            "ArcGisMapServerImageryProvider": {},
+            "GoogleEarthEnterpriseImageryProvider": {},
+            "createTileMapServiceImageryProvider": {}
+        },
+        {
+            "show": false,
+            "name": "离线影像",
+            "xbsjZIndex": -1,
+            "imgUrl": "Epsplanet_Assets/assets/basemap/local_image.png",
+            "xbsjGuid": "ad360d1e-e817-4c28-bc58-9e2fbe70ca7g",
+            "xbsjType": "Imagery",
+            "xbsjImageryProvider": {
+                "createTileMapServiceImageryProvider": {
+                    "url": "Epsplanet_SDK/XbsjCesium/Assets/Textures/NaturalEarthII",
+                    "fileExtension": "jpg"
+                },
+                "type": "createTileMapServiceImageryProvider"
+            }
+        },
+        {
+            "show": true,
+            "name": "高德影像",
+            "xbsjZIndex": -1,
+            "imgUrl": "Epsplanet_Assets/assets/basemap/Image_map.png",
+            "xbsjGuid": "ad360d1e-e817-4c28-bc58-9e2fbe70ca7e",
+            "xbsjType": "Imagery",
+            "xbsjImageryProvider": {
+                "XbsjImageryProvider": {
+                    "url": "http://webst02.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}",
+                    "srcCoordType": "GCJ02",
+                    "dstCoordType": "WGS84"
+                }
+            }
+        }
+    ]
+}

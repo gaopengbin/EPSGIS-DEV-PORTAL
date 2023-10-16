@@ -1,0 +1,6 @@
+{
+    "EPSGIS_SERVER_URL": "http://192.168.31.128:11290",
+    "getDictionary": "/epsplanet/server/dictionary",
+    "getServer": "/epsplanet/manager/server",
+    "getDataUrl": "/epsplanet/manager/release/panoramas/"
+}

@@ -1,0 +1,80 @@
+{
+    "licenses": "82f88756ae9b3f1eb490e3a34c6ba77a61a97fa3ec950791e88ddb924b60f449e5621aeb4c2b4ce84327c0bc877a4742883e202d78ca3841fa2e84df058d8797",
+    "include": [
+        "ol"
+    ],
+    "modules": {
+        "cesium": [
+            {
+                "type": "css",
+                "url": ""
+            },
+            {
+                "type": "js",
+                "url": "lib/cesium/webgis-cesium.umd.cjs"
+            }
+        ],
+        "ol": [
+            {
+                "type": "css",
+                "url": "third_party/ol/ol.css"
+            },
+            {
+                "type": "js",
+                "url": "third_party/ol/ol.js"
+            },
+            {
+                "type": "js",
+                "url": "third_party/ol/olms.js"
+            },
+            {
+                "type": "css",
+                "url": "third_party/ol/ol-ext.css"
+            },
+            {
+                "type": "js",
+                "url": "third_party/ol/ol-ext.js"
+            },
+            {
+                "type": "js",
+                "url": "third_party/shpjs/shp.min.js"
+            },
+            {
+                "type": "js",
+                "url": "third_party/proj4/proj4.js"
+            },
+            {
+                "type": "js",
+                "url": "third_party/uuid/uuid.min.js"
+            },
+            {
+                "type": "css",
+                "url": "lib/ol/style.css"
+            },
+            {
+                "type": "js",
+                "url": "lib/ol/webgis-ol.umd.cjs"
+            }
+        ],
+        "arcgis": [
+            {
+                "type": "css",
+                "url": ""
+            },
+            {
+                "type": "js",
+                "url": "lib/arcgis/webgis-arcgis.umd.cjs"
+            }
+        ],
+        "sync": [
+            {
+                "type": "css",
+                "url": ""
+            },
+            {
+                "type": "js",
+                "url": "lib/sync/sync.umd.cjs"
+            }
+        ]
+    }
+}

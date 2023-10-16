@@ -1,0 +1,26 @@
+{
+  "proxy": "/geoserver39",
+  "proxy_bak": "http://jojo1986.cn:8188/geoserver",
+  "layerList": [
+    {
+      "namespace": "2dd391dcc4fa481bb982092c52a77a8b",
+      "label": "安防_P_安防",
+      "name": "安防_P_安防"
+    },
+    {
+      "namespace": "2dd391dcc4fa481bb982092c52a77a8b",
+      "label": "安防_NEW_L_安防",
+      "name": "安防_NEW_L_安防"
+    },
+    {
+      "namespace": "WGS84",
+      "label": "建筑图层",
+      "name": "FW84"
+    },
+    {
+      "namespace": "WGS84",
+      "label": "道路图层",
+      "name": "L84"
+    }
+  ]
+}

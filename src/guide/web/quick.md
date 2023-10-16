@@ -2,7 +2,7 @@
 title: "快速开始"
 ---
 
-# 引入 EPSPlanetSDK
+# 引入EPSPlanetSDK
 
 ## 下载 EPSPlanetSDK
 
@@ -51,3 +51,50 @@ XE.ready().then(() => {
 
 :::
 
+## 组件库安装
+
+```node
+选择一个你喜欢的包管理器 
+
+# NPM
+npm install epsplanet
+
+# Yarn
+yarn add epsplanet
+
+# PNPM
+pnpm add epsplanet
+```
+
+## 组件库用法
+
+### 全局引入
+如果你想在项目中全局引入组件库，可以在 main.ts 中这样写
+
+```typescript
+import { createApp } from "vue";
+import App from "./App.vue";
+import Epsplanet from "epsplanet";
+import "epsplanet/es/style.css";
+
+XE.ready().then(() => {
+  const app = createApp(App);
+  app.use(Epsplanet);
+  app.mount("#app");
+});
+```
+
+### 按需引入
+如果你只想引入部分组件，可以手动引入组件
+
+```vue
+<template>
+  <div id="app">
+    <epsplanet-earth :options="options" />
+  </div>
+</template>
+<script setup>
+import { EpsplanetEarth } from "vue";
+import "epsplanet/es/style.css";
+</script>
+```

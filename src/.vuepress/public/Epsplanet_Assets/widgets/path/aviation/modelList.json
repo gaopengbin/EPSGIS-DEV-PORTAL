@@ -1,0 +1,25 @@
+{
+  "modelList": [
+    {
+      "czmObject": {
+        "name": "飞机",
+        "xbsjType": "Model",
+        "url": "http://jojo1986.cn:8888/data/models/飞机及航空/飞机/飞机.glb"
+      }
+    },
+    {
+      "czmObject": {
+        "name": "无人机",
+        "xbsjType": "Model",
+        "url": "http://jojo1986.cn:8888/data/models/飞机及航空/无人机/无人机.glb"
+      }
+    },
+    {
+      "czmObject": {
+        "name": "小汽车",
+        "xbsjType": "Model",
+        "url": "http://jojo1986.cn:8888/data/models/车辆/小汽车/小汽车.gltf"
+      }
+    }
+  ]
+}

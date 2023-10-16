@@ -1,0 +1,4 @@
+{
+    model:"both"||"address"||"point"//用来配置功能的模式,both是都有,address只有地址搜索,point只有经纬度搜索
+    bdapiAK:""//百度api的activeKey
+}

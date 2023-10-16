@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MVVM - XbsjEarth Documentation</title>
+
+    <!--[if lt IE 9]>
+      <script src="javascript/html5.js"></script>
+    <![endif]-->
+    <link href="styles/jsdoc-default.css" rel="stylesheet">
+    <link href="styles/prism.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">
+        <!-- <a href="index.html"><img src="Images/CesiumLogo.png" class="cesiumLogo"></a> -->
+        <a href="index.html">EarthSDK</a>
+        MVVM
+        <div class="titleCenterer"></div>
+    </h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+
+    
+        
+
+<div class="source-link rightLinks">
+</div>
+
+
+
+        
+            <div class="description">用来实现响应式数据对象或者属性绑定的方法集合</div>
+        
+
+        
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id=".bind">
+        <a href="#.bind" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span>MVVM.bind<span class="signature">(reactObject1, reactProperty1, reactObject2, reactProperty2, <span class="optional">params</span>)</span>
+        
+
+<div class="source-link rightLinks">
+</div>
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    双向绑定的属性，如果一方发生变化，另一方同样会跟随变化
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>reactObject1</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                第一个绑定对象，可以是vue对象，或者是XbsjEarth中的对象</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>reactProperty1</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                第一个绑定对象的属性名，必须是字符串类型，形式如：'prop1.prop2.prop3'</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>reactObject2</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                第二个绑定对象，可以是vue对象，或者是XbsjEarth中的对象</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>reactProperty2</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                第二个绑定对象的属性名，必须是字符串类型，形式如：'prop1.prop2.prop3'</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                额外参数，暂时保留</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id=".bindDegreeRadian">
+        <a href="#.bindDegreeRadian" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span>MVVM.bindDegreeRadian<span class="signature">(degreeObject, degreeProperty, radianObject, radianProperty)</span>
+        
+
+<div class="source-link rightLinks">
+</div>
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    双向数据绑定，前者为角度属性，后者为弧度属性。注意：绑定的只能是number类型的值！
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>degreeObject</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                第一个绑定对象，可以是vue对象，或者是XbsjEarth中的对象</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>degreeProperty</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                第一个绑定对象的属性名，必须是字符串类型，形式如：'prop1.prop2.prop3'</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>radianObject</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                第二个绑定对象，可以是vue对象，或者是XbsjEarth中的对象</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>radianProperty</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                第二个绑定对象的属性名，必须是字符串类型，形式如：'prop1.prop2.prop3'</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id=".bindPosition">
+        <a href="#.bindPosition" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span>MVVM.bindPosition<span class="signature">(degreesObject, degreesPropery, radiansObject, radiansProperty)</span>
+        
+
+<div class="source-link rightLinks">
+</div>
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    双向数据绑定，前者为角度属性，后者为弧度属性。注意：绑定的只能是一个长度为3的数组。该数组中的元素必须是number类型。
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>degreesObject</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                第一个绑定对象，可以是vue对象，或者是XbsjEarth中的对象</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>degreesPropery</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                第一个绑定对象的属性名，必须是字符串类型，形式如：'prop1.prop2.prop3'</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>radiansObject</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                第二个绑定对象，可以是vue对象，或者是XbsjEarth中的对象</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>radiansProperty</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                第二个绑定对象的属性名，必须是字符串类型，形式如：'prop1.prop2.prop3'</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id=".bindRotation">
+        <a href="#.bindRotation" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span>MVVM.bindRotation<span class="signature">(degreesObject, degreesPropery, radiansObject, radiansProperty)</span>
+        
+
+<div class="source-link rightLinks">
+</div>
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    双向数据绑定，前者为角度属性，后者为弧度属性。注意：绑定的只能是一个长度为3的数组。该数组中的元素必须是number类型。
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>degreesObject</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                第一个绑定对象，可以是vue对象，或者是XbsjEarth中的对象</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>degreesPropery</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                第一个绑定对象的属性名，必须是字符串类型，形式如：'prop1.prop2.prop3'</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>radiansObject</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                第二个绑定对象，可以是vue对象，或者是XbsjEarth中的对象</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>radiansProperty</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                第二个绑定对象的属性名，必须是字符串类型，形式如：'prop1.prop2.prop3'</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id=".track">
+        <a href="#.track" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span>MVVM.track<span class="signature">(reactObject1, reactProperty1, reactObject2, reactProperty2, <span class="optional">params</span>)</span>
+        
+
+<div class="source-link rightLinks">
+</div>
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    单向绑定的属性，reactObject1[reactProperty1]将跟踪reactObject2[reactProperty2]，但reactObject1发生变化reactObject2并不会跟踪！
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>reactObject1</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                第一个绑定对象，可以是vue对象，或者是XbsjEarth中的对象</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>reactProperty1</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                第一个绑定对象的属性名，必须是字符串类型，形式如：'prop1.prop2.prop3'</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>reactObject2</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                第二个绑定对象，可以是vue对象，或者是XbsjEarth中的对象</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>reactProperty2</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                第二个绑定对象的属性名，必须是字符串类型，形式如：'prop1.prop2.prop3'</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                额外参数，暂时保留</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id=".track2">
+        <a href="#.track2" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span>MVVM.track2<span class="signature">(reactObject1, reactProperty1, reactObject2, reactProperty2, <span class="optional">params</span>)</span>
+        
+
+<div class="source-link rightLinks">
+</div>
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    单向绑定的属性，reactObject1[reactProperty1]将跟踪reactObject2[reactProperty2]，但reactObject1发生变化reactObject2并不会跟踪！
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>reactObject1</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                第一个绑定对象，可以是vue对象，或者是XbsjEarth中的对象</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>reactProperty1</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                第一个绑定对象的属性名，必须是字符串类型，形式如：'prop1.prop2.prop3'</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>reactObject2</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                第二个绑定对象，可以是vue对象，或者是XbsjEarth中的对象</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>reactProperty2</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                第二个绑定对象的属性名，必须是字符串类型，形式如：'prop1.prop2.prop3'</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                额外参数，暂时保留</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id=".watch">
+        <a href="#.watch" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span>MVVM.watch<span class="signature">()</span>
+        
+
+<div class="source-link rightLinks">
+</div>
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    watch <br/>用来实现对响应式属性对象的监控，需要1-3个参数，具体使用请看示例。<br/>注意这里的watch不能跟踪vue的属性，vue的属性跟踪，请使用Vue.$watch来操作。
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h5>Example:</h5>
+        
+    <pre><code class="language-javascript">// 示例1：只需要一个参数，该参数是一个回调函数，函数中任意一个用到的响应式属性发生变化，// 函数即会响应。但需要注意，如果函数中有很多响应式属性时，这种方式容易引起死循环。// 相当于a变化，会引起b的变化；b的变化，又到至a继续变化。这样就导致了死循环。var uw = XE.MVVM.watch(() => {	console.log('当前位置：' + path1.currentD);});// 示例2：需要三个参数，第一个参数是监控的对象，第二个参数是该对象的属性，注意要用字符串表示// 第三个参数是一个回调函数，当属性的值发生变化时，该函数会响应。var uw2 = XE.MVVM.watch(path1, 'currentD', () => {	console.log('当前位置：' + path1.currentD);});// 示例3：需要两个参数，第一个参数是监控的对象// 第二个参数是一个回调函数，当监控对象内部发生变化时，该函数会响应。// 比如path.positions是一个位置数组，如果数组的长度，内容发生变化，就会引起函数调用。var uw3 = XE.MVVM.watch(path1.positions, () => {	console.log('positions发生变化！');});// 示例4：需要两个参数，第一个参数是回调函数，需要有返回值// 第二个参数是一个回调函数，当第一个参数构成的回调函数的返回值发生变化时，该回调函数就会响应。var uw4 = XE.MVVM.watch(() => {     return path1.show;}, show => {	console.log(`路径状态：${show ? '显示' : '隐藏'}`);});</code></pre>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+
+    <footer>
+        Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a>
+    </footer>
+</div>
+
+<!--<div class="nav">
+    <div class="menu">
+        <input type="text" class="classFilter" id="ClassFilter" placeholder="Search">
+        
+    </div>
+</div> -->
+
+<script>
+if (window.frameElement) {
+    document.body.className = 'embedded';
+
+    var ele = document.createElement('a');
+    ele.className = 'popout';
+    ele.target = '_blank';
+    ele.href = window.location.href;
+    ele.title = 'Pop out';
+    document.getElementById('main').appendChild(ele);
+}
+
+// Set targets on external links.  Sandcastle and GitHub shouldn't be embedded in any iframe.
+Array.prototype.forEach.call(document.getElementsByTagName('a'), function(a) {
+    if (/^https?:/i.test(a.getAttribute('href'))) {
+        a.target='_blank';
+    }
+});
+</script>
+
+<script src="javascript/prism.js"></script>
+<script src="javascript/cesiumDoc.js"></script>
+
+</body>
+</html>

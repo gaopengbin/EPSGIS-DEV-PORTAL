@@ -1,0 +1,137 @@
+{
+  "comments_1": "services是一个数组 包含了所有的服务 namespace是服务名称，其中layers包含了服务中的所有图层",
+  "comments_2": "searchKeys是进行查询的属性，title是显示的名称，fieldName是用于查询的字段名称，input是用户输入的查询值",
+  "comments_3": "showSelectedAttrOnly: 是否只在弹窗中显示指定的属性，若为true，则只显示selectedAttributes中的字段和值；为false则显示所有字段和值",
+  "services": [
+    {
+      "namespace": "",
+      "url": "http://120.48.115.17:6080/arcgis/rest/services/fwh/MapServer",
+      "layers": [
+        {
+          "name": "fwh",
+          "layerIndex": 0,
+          "searchKeys": [
+            {
+              "title": "单元号",
+              "fieldName": "DYH",
+              "input": "",
+              "type": "text"
+            },
+            {
+              "title": "地址",
+              "fieldName": "ZL",
+              "input": "",
+              "type": "text"
+            }
+          ],
+          "showSelectedAttrOnly": true,
+          "selectedAttributes": [
+            {
+              "title": "单元号",
+              "fieldName": "DYH"
+            },
+            {
+              "title": "地址",
+              "fieldName": "ZL"
+            },
+            {
+              "title": "权属",
+              "fieldName": "QSXZ"
+            }
+          ]
+        },
+        {
+          "name": "L84",
+          "searchKeys": [
+            {
+              "title": "编号",
+              "fieldName": "Id",
+              "input": "",
+              "type": "number"
+            },
+            {
+              "title": "名称",
+              "fieldName": "name",
+              "input": "",
+              "type": "text"
+            }
+          ],
+          "showSelectedAttrOnly": true,
+          "selectedAttributes": [
+            {
+              "title": "编号",
+              "fieldName": "Id"
+            },
+            {
+              "title": "名称",
+              "fieldName": "name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "namespace": "WGS84",
+      "url": "/geoserver39",
+      "layers": [
+        {
+          "name": "FW84",
+          "searchKeys": [
+            {
+              "title": "编号",
+              "fieldName": "OBJECTID",
+              "input": "",
+              "type": "number"
+            },
+            {
+              "title": "权利人",
+              "fieldName": "QLR",
+              "input": ""
+            }
+          ],
+          "showSelectedAttrOnly": true,
+          "selectedAttributes": [
+            {
+              "title": "编号",
+              "fieldName": "OBJECTID"
+            },
+            {
+              "title": "权利人",
+              "fieldName": "QLR"
+            },
+            {
+              "title": "房屋面积",
+              "fieldName": "FWMJ"
+            }
+          ]
+        },
+        {
+          "name": "L84",
+          "searchKeys": [
+            {
+              "title": "编号",
+              "fieldName": "Id",
+              "input": ""
+            },
+            {
+              "title": "名称",
+              "fieldName": "name",
+              "input": ""
+            }
+          ],
+          "showSelectedAttrOnly": true,
+          "selectedAttributes": [
+            {
+              "title": "编号",
+              "fieldName": "Id"
+            },
+            {
+              "title": "名称",
+              "fieldName": "name"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

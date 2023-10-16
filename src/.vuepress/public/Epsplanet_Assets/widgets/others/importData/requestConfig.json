@@ -1,0 +1,15 @@
+{
+  "request": {
+    "formDataConfig": {
+        "headers": {
+          "Content-Type": "multipart/form-data"
+        }
+    },
+    "fileSource": "http://192.168.31.128:11215/epsplanet/manager/filesource/",
+    "downloadFile": "http://192.168.31.128:11215/epsplanet/manager/filesource/download/",
+    "getShpId": "http://192.168.31.128:11215/epsplanet/manager/geojson/shp/",
+    "shpToGeoJSON": "http://192.168.31.128:11215/epsplanet/manager/geojson/content/"
+  }
+}
+
+

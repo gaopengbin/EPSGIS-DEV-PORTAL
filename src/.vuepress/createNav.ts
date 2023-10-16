@@ -92,9 +92,9 @@ function createComponentNav() {
                 '视角恢复',
                 '视频投放',
                 '双屏对比',
-                '通用查询',
-                '外部数据',
-                '微观拾取',
+                '统计查询',
+                // '外部数据',
+                // '微观拾取',
             ]
         },
     ]
@@ -118,8 +118,8 @@ function createComponentNav() {
         item.doc.forEach(d => children.push(item.path + d + '.md'))
         obj = {
             text: item.name,
-            collapsable: true,
-            sidebarDepth: 0,
+            collapsible: true,
+            // sidebarDepth: 0,
             children: children
         }
         navs.push(obj)

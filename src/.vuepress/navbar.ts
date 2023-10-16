@@ -33,31 +33,33 @@ export default navbar([
   },
   {
     text: "开发指南",
-    prefix: "/guide/",
-    children: [
-      {
-        text: 'Web端',
-        link: 'web/intro'
-      },
-      {
-        text: '移动端',
-        link: 'mobile'
-      }
-    ]
+    link: "/guide/web/intro",
+    // prefix: "/guide/",
+    // children: [
+    //   {
+    //     text: 'Web端',
+    //     link: 'web/intro'
+    //   },
+    //   {
+    //     text: '移动端',
+    //     link: 'mobile'
+    //   }
+    // ]
   },
   {
     text: "示例",
-    prefix: "/example/",
-    children: [
-      {
-        text: "web端",
-        link: 'web'
-      },
-      {
-        text: "移动端",
-        link: 'mobile'
-      },
-    ],
+    link: "/example/web",
+    // prefix: "/example/",
+    // children: [
+    //   {
+    //     text: "web端",
+    //     link: 'web'
+    //   },
+    //   {
+    //     text: "移动端",
+    //     link: 'mobile'
+    //   },
+    // ],
   },
   {
     text: "API",
@@ -67,6 +69,6 @@ export default navbar([
   {
     text: "组件库",
     icon: "book",
-    link: "/lib/",
+    link: "/lib/base/earth",
   }
 ]);

@@ -1,0 +1,89 @@
+{
+  "comment": "entityName和场景里图层名保持一致, serviceName和服务图层名一致",
+  "layers": [
+    {
+      "entityName": "安防管线arcgis",
+      "serviceName": "安防_L",
+      "config": {
+        "serverURL": "jojo/rest/services/AFGX/MapServer/1",
+        "serverType": "arcgis_rest",
+        "serverId": "FNODE_ID",
+        "entityId": "FNODE_ID",
+        "outFields": [],
+        "filter": [],
+        "keyMap": [
+          {
+            "attribute": "GXID",
+            "alias": "点号"
+          },
+          {
+            "attribute": "GXXZ",
+            "alias": "管线类型"
+          },
+          {
+            "attribute": "DMGC",
+            "alias": "地面高程"
+          }
+        ]
+      }
+    },
+    {
+      "entityName": "安防管线geoserver",
+      "serviceName": "安防_NEW_L_安防二维线",
+      "config": {
+        "serverURL": "geoserver39/2dd391dcc4fa481bb982092c52a77a8b",
+        "serverType": "geoserver",
+        "serverId": "FNODE_ID",
+        "entityId": "FNODE_ID",
+        "outFields": [],
+        "filter": [
+          "GXXZ"
+        ],
+        "keyMap": [
+          {
+            "attribute": "GXID",
+            "alias": "点号"
+          },
+          {
+            "attribute": "GXXZ",
+            "alias": "管线类型"
+          },
+          {
+            "attribute": "DMGC",
+            "alias": "地面高程"
+          }
+        ]
+      }
+    },
+    {
+      "entityName": "广荣村房屋",
+      "serviceName": "640122103",
+      "config": {
+        "serverURL": "http://120.48.115.17:6080/arcgis/rest/services/grcServer/MapServer/0",
+        "serverType": "arcgis_rest",
+        "serverId": "Block_Name",
+        "entityId": "name",
+        "outFields": [],
+        "filter": [],
+        "keyMap": [
+          {
+            "attribute": "Height",
+            "alias": "高度"
+          }
+        ]
+      }
+    }
+  ],
+  "locale": {
+    "en": [
+      "YSDM",
+      "BZ",
+      "CLRY"
+    ],
+    "zh": [
+      "要素代码",
+      "备注",
+      "测量人员"
+    ]
+  }
+}

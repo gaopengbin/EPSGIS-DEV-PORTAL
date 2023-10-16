@@ -1,0 +1,45 @@
+{
+    "include": [
+        "ol"
+    ],
+    "modules": {
+        "ol": [
+            {
+                "type": "css",
+                "url": "../../EPSPlanetMap/third_party/ol/ol.css"
+            },
+            {
+                "type": "js",
+                "url": "../../EPSPlanetMap/third_party/ol/ol.js"
+            },
+            {
+                "type": "js",
+                "url": "../../EPSPlanetMap/third_party/ol/olms.js"
+            },
+            {
+                "type": "css",
+                "url": "../../EPSPlanetMap/third_party/ol/ol-ext.css"
+            },
+            {
+                "type": "js",
+                "url": "../../EPSPlanetMap/third_party/ol/ol-ext.js"
+            },
+            {
+                "type": "css",
+                "url": "../../EPSPlanetMap/style.css"
+            },
+            {
+                "type": "css",
+                "url": "../../EPSPlanetMap/lib/ol/style.css"
+            },
+            {
+                "type": "js",
+                "url": "../../EPSPlanetMap/lib/ol/webgis-ol.umd.cjs"
+            },
+            {
+                "type": "js",
+                "url": "../../EPSPlanetMap/test.js"
+            }
+        ]
+    }
+}
