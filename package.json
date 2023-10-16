@@ -20,7 +20,7 @@
     "axios": "^1.5.0",
     "element-plus": "^2.3.12",
     "element-resize-detector": "^1.2.4",
-    "epsplanet": "file:../epsplanet-2.0.0.tgz",
+    "epsplanet": "file:./epsplanet-2.0.0.tgz",
     "pdf-vue3": "^1.0.9"
   }
 }
