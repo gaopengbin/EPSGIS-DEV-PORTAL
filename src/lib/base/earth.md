@@ -3,16 +3,6 @@
 <EpsplanetEarth :showDefaultBasemap="true" />
 </div>
 
-
-<script setup lang='ts'>
-    // import {Earth} from "epsplanet"
-    // import {onMounted} from "vue"
-    // onMounted(async()=>{
-    //   //  await XE.ready()
-    // //    debugger
-    // })
-</script>
-
 :::: details 代码
 
 ```vue
@@ -23,11 +13,6 @@
 
 ::::
 
-<!-- ## 标签
-
-```
-<epsplanet-earth></epsplanet-earth>
-``` -->
 
 ## epsplanet-earth 属性
 

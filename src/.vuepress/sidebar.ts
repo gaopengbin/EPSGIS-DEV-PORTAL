@@ -6,7 +6,7 @@ export default sidebar({
     "",
     {
       text: "案例",
-      icon: "laptop-code",
+      icon: "icon-display-code",
       prefix: "demo/",
       link: "demo/",
       children: "structure",
@@ -23,9 +23,9 @@ export default sidebar({
     // "",
     {
       text: "介绍",
-      icon: "book",
+      icon: "icon-all-fill",
       prefix: "web/intro/",
-      link: "web/intro/",
+      // link: "web/intro/",
       children: [
         {
           text: "Cesium",
@@ -44,7 +44,7 @@ export default sidebar({
     },
     {
       text: "快速开始",
-      icon: "rocket",
+      icon: "icon-paperplane-fill",
       prefix: "web/quick",
       link: "web/quick",
       children: [
@@ -68,7 +68,7 @@ export default sidebar({
     },
     {
       text: "开发",
-      icon: "laptop-code",
+      icon: "icon-display-code",
       prefix: "dev/",
       // link: "dev/",
       children:[

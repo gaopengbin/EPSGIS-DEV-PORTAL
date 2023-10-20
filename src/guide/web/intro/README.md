@@ -14,7 +14,7 @@ CesiumJS 基于开放格式构建，旨在实现强大的互操作性和海量�
 - 在桌面设备或移动设备上与用户共享
 
 ::: tip api 文档
-[点击跳转](/api/Cesium.html)
+[点击跳转](/EPSGIS-DEV-PORTAL/api/Cesium.html)
 :::
 
 ## EpsplanetSDK
@@ -28,7 +28,7 @@ CesiumJS 基于开放格式构建，旨在实现强大的互操作性和海量�
 - 灵活的功能扩展
 
 ::: tip api 文档
-[点击跳转](/api/EPSPlanetSDK.html)
+[点击跳转](/EPSGIS-DEV-PORTAL/api/)
 :::
 
 ## EpsplanetBWL
@@ -40,5 +40,5 @@ CesiumJS 基于开放格式构建，旨在实现强大的互操作性和海量�
 - 开箱即用
 
 ::: tip 组件库文档
-请移步 [组件](/components/) 查看详细介绍
+请移步 [组件](/EPSGIS-DEV-PORTAL/lib/base/earth) 查看详细介绍
 :::

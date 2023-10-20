@@ -8,7 +8,8 @@ bgImageDark: /spaceman.png
 bgImageStyle:
   background-attachment: fixed
   height: 100vh
-heroText: EPSGIS-DEV
+heroText: 时空应用开发平台
+
 heroFullScreen: true
 tagline: 帮助你快速搭建一个专属的WEBGIS应用
 actions:

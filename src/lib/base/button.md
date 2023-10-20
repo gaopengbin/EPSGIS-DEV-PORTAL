@@ -1,5 +1,17 @@
 # 按钮
 
+:::: details 代码
+
+```html
+<!-- 触发型按钮这样使用 -->
+<epsplanet-button v-for="(item, i) in comps" :key="i" :icon="item.icon" :title="item.label" :position="item.position" :panel="item.panel" :type="item.type">
+  <template v-slot="data">
+    <component :is="item.component" :btnClass="data.btnClass"></component>
+  </template>
+</epsplanet-button>
+```
+::::
+
 ## 标签
 
 ```
@@ -33,16 +45,3 @@
 | 属性 | 说明                                                 | 类型   | 可选 | 默认 |
 | ---- | ---------------------------------------------------- | ------ | ---- | ---- |
 | data | 用于传递按钮的 class,针对按钮的 type='trigger'时使用 | object | 是   | -    |
-
-<details>
-<summary>代码查看</summary>
-
-``` html
-<!-- 触发型按钮这样使用 -->
- <epsplanet-button v-for="(item, i) in comps" :key="i" :icon="item.icon" :title="item.label" :position="item.position" :panel="item.panel" :type="item.type">
-    <template v-slot="data">
-        <component :is="item.component" :btnClass="data.btnClass"></component>
-    </template>
- </epsplanet-button>
-```
-</details>

@@ -8,7 +8,7 @@ export default defineUserConfig({
   base: "/EPSGIS-DEV-PORTAL/",
   port: 8083,
   lang: "zh-CN",
-  title: "EPSGIS DEV for Cesium",
+  title: "时空应用开发平台",
   description: "EPSGIS二次开发",
   head: [
     ["script", { type: 'text/javascript', src: '/EPSPlanet_SDK/XbsjEarth/XbsjEarth.js' }],
@@ -23,5 +23,5 @@ export default defineUserConfig({
 
   alias: {
     "@test": path.resolve(__dirname, "components/test.vue")
-  }
+  },
 });

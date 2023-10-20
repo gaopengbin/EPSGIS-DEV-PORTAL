@@ -49,8 +49,9 @@
 
             </el-menu>
         </el-col>
-        <el-col :span="20">
-            <PDF src="/sdk.pdf" v-show="isPdf" />
+        <el-col :span="20" style="overflow: auto;">
+            <!-- <PDF src="/EPSGIS-DEV-PORTAL/sdk.pdf" v-show="isPdf" /> -->
+            <img src="./api.jpg" style="pointer-events: none;" v-show="isPdf">
             <iframe :src=url v-if="!isPdf" />
         </el-col>
     </el-row>

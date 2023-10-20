@@ -6,12 +6,13 @@ export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
 
   author: {
-    name: "Mr.Gao",
-    url: "https://mister-hope.com",
+    name: "SUNWAY",
+    url: "http://www.sunwaysurvey.com.cn",
   },
 
-  iconAssets: "fontawesome-with-brands",
-
+  // iconAssets: "fontawesome-with-brands",
+  iconAssets: "/EPSGIS-DEV-PORTAL/iconfont/iconfont.css",
+  iconPrefix:'iconfont ',
   logo: "/sunway.png",
 
   // repo: "vuepress-theme-hope/vuepress-theme-hope",
@@ -24,7 +25,7 @@ export default hopeTheme({
   // sidebar
   sidebar,
 
-  footer: "默认页脚",
+  // footer: "默认页脚",
 
   displayFooter: true,
 
@@ -40,6 +41,7 @@ export default hopeTheme({
   },
 
   plugins: {
+    // photoSwipe: false,
     // You should generate and use your own comment service
     // comment: {
     //   provider: "Giscus",

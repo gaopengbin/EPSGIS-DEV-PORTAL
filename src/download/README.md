@@ -24,7 +24,7 @@ backtotop: false
 
 ### [点击下载 EPSPlanetSDK](http://39.152.31.83:11280/apps/sunwayDownload/sdk/sdk1.62.zip)
 
-### [点击下载组件库压缩包](http://39.152.31.83:11280/apps/epsplanet_docs/resource/EPSPlanetBWL-1.0.0.tgz)
+### [点击下载组件库压缩包](/EPSGIS-DEV-PORTAL/resource/epsplanet-2.0.0.tgz)
 
 ### [点击下载组件库资源配置包](http://39.152.31.83:11280/apps/epsplanet_docs/resource/Epsplanet_Assets.zip)
 

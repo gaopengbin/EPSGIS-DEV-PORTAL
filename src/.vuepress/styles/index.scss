@@ -54,6 +54,14 @@
         }
     }
 }
-#copyrightinfo{
+#copyrightinfo {
     display: none;
+}
+
+#main-title {
+    background: linear-gradient(120deg, #fcfdff, #ffffff 30%, #fefefe 100%);
+    -webkit-background-clip: text;
+}
+.vp-description {
+    color: #ffffff;
 }
